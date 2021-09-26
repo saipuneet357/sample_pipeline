@@ -1,0 +1,46 @@
+{
+"SeriousDlqin2yrs": {
+  "Description": "Person experienced 90 days past due delinquency or worse.",
+  "Type": "Y/N"
+},
+"RevolvingUtilizationOfUnsecuredLines": {
+  "Description": "Total balance on credit cards and personal lines of credit except real estate and installment debt (e.g. car loans) divided by the sum of credit limits.",
+  "Type": "Percentage"
+},
+"age": {
+  "Description": "Age of borrower in years.",
+  "Type": "Integer"
+},
+"NumberOfTime30-59DaysPastDueNotWorse": {
+  "Description": "Number of times borrower has been 30-59 days past due but no worse in the last 2 years.",
+  "Type": "Integer"
+},
+"DebtRatio": {
+  "Description": "Monthly debt payments, alimony, and living costs divided by monthly gross income.",
+  "Type": "Percentage"
+},
+"MonthlyIncome": {
+  "Description": "Monthly income.",
+  "Type": "Dollars"
+},
+"NumberOfOpenCreditLinesAndLoans": {
+  "Description": "Number of open loans (e.g. car loan, mortgage) and lines of credit (e.g. credit cards).",
+  "Type": "Integer"
+},
+"NumberOfTimes90DaysLate": {
+  "Description": "Number of times borrower has been 90 days or more past due.",
+  "Type": "Integer"
+},
+"NumberRealEstateLoansOrLines": {
+  "Description": "Number of mortgage and real estate loans including home equity lines of credit.",
+  "Type": "Integer"
+},
+"NumberOfTime60-89DaysPastDueNotWorse": {
+  "Description": "Number of times borrower has been 60-89 days past due but no worse in the last 2 years.",
+  "Type": "Integer"
+},
+"NumberOfDependents": {
+  "Description": "Number of dependents in family excluding applicant (spouse, children, etc...).	",
+  "Type": "Integer"
+}
+}
