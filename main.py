@@ -1,8 +1,17 @@
 import boto3
 from io import BytesIO
 import pandas as pd
+from config import connection_details
 
-def extract_data_from_source(aws_access_key_id, aws_secret_access_key, bucket, s3_file, region_name='ap-south-1'):
+
+def extract_data_from_source():
+
+    # Source connection details
+    aws_access_key_id = connection_details['source_details']['aws_access_key_id']
+    aws_secret_access_key = connection_details['source_details']['aws_secret_access_key']
+    bucket = connection_details['source_details']['bucket']
+    s3_file = connection_details['source_details']['s3_file']
+    region_name = connection_details['source_details']['region_name']
     s3 = boto3.client('s3', aws_access_key_id=aws_access_key_id, aws_secret_access_key=aws_secret_access_key, region_name=region_name)
     file = s3.get_object(Bucket=bucket, Key=s3_file)
     chunk_size = 5000
@@ -30,17 +39,13 @@ def extract_data_from_source(aws_access_key_id, aws_secret_access_key, bucket, s
     print('Data has been extracted from s3..............')
     return file_path
 
+
 def load_data_into_target(file_path):
     pass
 
 
 if __name__ == '__main__':
-    aws_access_key_id = 'AKIA5EGMOHVGHSO2KL7N'
-    aws_secret_access_key = 'EDhqPqv/jln6XcSF8hhI2hEVs64lg4fk/uyacQRv'
-    bucket = 'spuneet-pipeline'
-    s3_file = 'sample_data.csv'
-    region_name = 'ap-south-1'
-    file_path = extract_data_from_source(aws_access_key_id, aws_secret_access_key, bucket, s3_file, region_name)
+    file_path = extract_data_from_source()
     if file_path != '':
         load_data_into_target(file_path)
 # import pandas as pd
