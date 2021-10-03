@@ -8,11 +8,11 @@ connection_details = {
     },
 
     'target_details': {
-        'host': '127.0.0.1',
-        'database': 'datawarehouse',
+        'host': 'localhost',
+        'port': 3307,
         'user': 'root',
-        'password': 'root',
-        'port': '5432'
+        'password': 'password',
+        'database': 'samplepipeline'
     }
 
 
