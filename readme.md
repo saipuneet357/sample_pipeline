@@ -21,3 +21,5 @@ and then inserting new data into the main table while deactivating old data.
 
 2) Using s3 as the source data and redshift as the data store
 3) The dag is scheduled daily
+
+A brief statistical presentation of the data is done in the file Understanding Loan Application Data.pptx
