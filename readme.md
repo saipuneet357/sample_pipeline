@@ -1,4 +1,4 @@
-Change data source details and target data store details in config.py
+Change data source and data store details in config.py
 
 To test a run you can change the config file and run tasks.py
 
