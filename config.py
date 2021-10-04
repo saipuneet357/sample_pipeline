@@ -1,6 +1,7 @@
 # Connection details of source and target machines
 # Change connection details to your respective machines
 # Using Redshift as the data store and s3 as the source
+# The s3_file key in source_details is the location of the data file
 
 connection_details = {
     'source_details': {
