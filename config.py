@@ -5,8 +5,8 @@
 
 connection_details = {
     'source_details': {
-        'aws_access_key_id': 'AKIA5EGMOHVGHSO2KL7N',
-        'aws_secret_access_key': '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',
+        'aws_access_key_id': '',
+        'aws_secret_access_key': '',
         'bucket': 'spuneet-pipeline',
         's3_file': 'sample_data.csv',
         'region': 'ap-south-1'
